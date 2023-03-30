@@ -15,27 +15,40 @@
 
         <form name="main">
             <label>
-                <span>Имя</span>
-                <input type="text" name="name">
+                <p>Имя</p>
+                <input type="text" name="name" placeholder="Name">
             </label>
             <label>
-                <span>Возраст</span>
-                <input type="text" name="age">
+                <p>Возраст</p>
+                <input type="text" name="age" placeholder="Age">
             </label>
             <button>Subjoin</button>
         </form>
 
-        <div class="users_list">
-            <div class="to_25">
-                <h1 class="title"></h1>
+        <div class="users_lists">
+            <div class="to_25 box">
+                <h2 class="title">People until 25</h2>
+                <div class="list">
+                    <div class="user">
+                        <div class="top item">
+                            <h1>Lorem, ipsum.</h1>
+                            <img src="./images/me.jpg" alt="">
+                        </div>
+                        <div class="bottom item">
+                            <div class="age">Age</div>
+                            <div class="age_num">20</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="to_50 box">
+                <h2 class="title">People until 50</h2>
                 <div class="list"></div>
             </div>
-            <div class="to_50">
-                <h1 class="title"></h1>
-                <div class="list"></div>
-            </div>
-            <div class="rest">
-                <h1 class="title"></h1>
+            <div class="divider"></div>
+            <div class="rest box">
+                <h2 class="title">Others</h2>
                 <div class="list"></div>
             </div>
         </div>

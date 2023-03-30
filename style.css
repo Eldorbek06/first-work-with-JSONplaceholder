@@ -1,11 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-.container{
+.container {
     max-width: 1240px;
     margin: 20px auto;
+    padding: 0 20px;
 }
+
+.container form {
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    gap: 10px;
+}
+
+.container form label p {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.container form label input {
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #c4c4c4;
+    height: 40px;
+}
+
+.container form label input::placeholder {
+    font-weight: 500;
+}
+
+.container form button {
+    all: unset;
+    background-color: #004DFF;
+    color: white;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0 15px;
+    height: 40px;
+}
+
+.container .users_lists {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 40px;
+    height: 600px;  
+}
+
+.container .users_lists .divider {
+    height: 100%;
+    width: 6px;
+    margin: 0 40px;
+    background-color: #c4c4c4;
+}
+
+.container .users_lists .box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    width: 100%;
+}
+
+.container .users_lists .list{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.container .users_lists .list .user {
+    width: 100%;
+    padding: 20px 15px;
+    border-radius: 10px;
+    border: solid 1px #c4c4c4;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-image: url(./images/me.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container .users_lists .list .user .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .users_lists .list .user .top h1 {
+    font-weight: 500;   
+}
+
+.container .users_lists .list .user .top img{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.container .users_lists .list .user .bottom{
+    height: 40px;
+    width: 100%;
+    background-color: #ececec;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.container .users_lists .list .user .bottom .age{
+    color: gray;
+}
+
