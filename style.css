@@ -65,16 +65,38 @@
 }
 
 .container .users_lists .box {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: start;
     width: 100%;
+    height: 100%;
+    padding-top: 60px;
+    position: relative;
+}
+
+.container .users_lists .box h2{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container .users_lists .box .fog{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(360deg, gray, transparent);
 }
 
 .container .users_lists .list{
     width: 100%;
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;    
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.container .users_lists .list::-webkit-scrollbar{
+    width: 0;
 }
 
 .container .users_lists .list .user {
@@ -85,9 +107,6 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background-image: url(./images/me.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 .container .users_lists .list .user .item {
@@ -101,8 +120,8 @@
 }
 
 .container .users_lists .list .user .top img{
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     object-fit: contain;
 }
 
@@ -119,3 +138,6 @@
     color: gray;
 }
 
+.MB{
+    margin-bottom: 180px;
+}
